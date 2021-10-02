@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import memoji from './memoji.png';
+import github from './github.png';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main_div">
+      <img src={memoji} width="300" alt="memoji"/>
+      <h1>Hi, I am Jeevan</h1>
+      <p>VIT, Vellore</p>
+      <a href="https://github.com/jeevan-yohan-varghese" target="_blank" rel="noreferrer">
+      <div class="github_link" onClick>
+
+        <img src={github} width="30" alt="github"/>
+        <p>GitHub Profile</p>
+      </div>
+      </a> 
     </div>
   );
 }
